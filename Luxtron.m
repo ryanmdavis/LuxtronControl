@@ -21,7 +21,7 @@
 luxtron=struct('com_port',[],'measurement_poll_frequency',[],'time_between_measurements',[],'save_dir',[]);
 luxtron.com_port='COM8';
 luxtron.measurement_poll_frequency=1; %sec
-luxtron.time_between_measurements=3; %sec
+luxtron.time_between_measurements=5; %sec
 luxtron.save_dir='C:\Users\Ryan2\Documents\MATLAB\Luxtron Control\data\';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

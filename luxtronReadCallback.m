@@ -60,7 +60,8 @@ if (s.bytesAvailable)
     plot(timestamps_sec-timestamps_sec(1),luxtron.temperature_values(:,print_channels));
     xlabel('time (s)','FontSize',18);
     ylabel('temperature (\circC)','FontSize',18);
-    
+    ylim([29 45]);
+    axis square
     temperature_values=luxtron.temperature_values; %#ok<NASGU>
     save(strcat(save_dir,'\backup.mat'),'timestamps_sec','temperature_values');
 
