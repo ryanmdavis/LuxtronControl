@@ -63,7 +63,7 @@ if (s.bytesAvailable)
     ylim([29 45]);
     axis square
     temperature_values=luxtron.temperature_values; %#ok<NASGU>
-    save(strcat(save_dir,'\backup.mat'),'timestamps_sec','temperature_values');
+    save(strcat(save_dir,filesep,'backup.mat'),'timestamps_sec','temperature_values');
 
     stop(t_wait);
 end
