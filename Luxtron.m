@@ -19,10 +19,15 @@
 % user inputs
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 luxtron=struct('com_port',[],'measurement_poll_frequency',[],'time_between_measurements',[],'save_dir',[]);
+% specify com port below
+% on the Mac it looks something like '/dev/cu.usbserial-FTHJ6NZ8'
 luxtron.com_port='COM8';
 luxtron.measurement_poll_frequency=1; %sec
 luxtron.time_between_measurements=3; %sec
+% specify save directory for temperature recording
 luxtron.save_dir='C:\Users\Ryan2\Documents\MATLAB\Luxtron Control\data\';
+% Mac example:
+%luxtron.save_dir='/Users/eugene/temp/';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % set up figure for display
